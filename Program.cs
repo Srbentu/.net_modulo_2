@@ -34,27 +34,40 @@ finally
 
 //new ExemploExcecao().method1();
 
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
+estados.Add("ES", "Espírito Santo");
+estados.Add("PR", "Paraná");
+estados.Add("SC", "Santa Catarina");
+estados.Add("RS", "Rio Grande do Sul");
+estados.Add("GO", "Goiás");
+estados.Add("MT", "Mato Grosso");
 
-
-
-Queue<int> fila = new Queue<int>();
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
-fila.Enqueue(10);
-
-foreach (var item in fila)
+foreach (var estado in estados)
 {
-    Console.WriteLine(item);
+ Console.WriteLine($"{estado.Key} {estado.Value}");   
 }
 
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove o primeiro elemento da fila
-
-foreach (var item in fila)
-{
-    Console.WriteLine(item);
-}
+// Queue<int> fila = new Queue<int>();
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+// fila.Enqueue(10);
+//
+// foreach (var item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+//
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove o primeiro elemento da fila
+//
+// foreach (var item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 //Pessoa p1 = new Pessoa();
 //p1.Name = "Breno";
