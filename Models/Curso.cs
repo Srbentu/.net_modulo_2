@@ -18,9 +18,10 @@ public class Curso
     }
     public void ListarAlunos()
     {
-        foreach (var aluno in Alunos)
+        Console.WriteLine($"Alunos do curso de : {Name}");
+        for(int count = 0; count < Alunos.Count; count++)
         {
-            Console.WriteLine($"Nome: {aluno.FullName} - Idade: {aluno.Age}");
+            Console.WriteLine($"{count + 1} - {Alunos[count].FullName}");
         }
     }
 }
