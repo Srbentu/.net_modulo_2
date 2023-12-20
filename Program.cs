@@ -1,6 +1,6 @@
 ﻿using ConsoleApp2.Models;
 
-Pessoa p1 = new Pessoa("Breno", "Marcomini");
+Pessoa p1 = new Pessoa(name:"Breno", lastname:"Marcomini");
 Pessoa p2 = new Pessoa("Julia" , "Marchetti");
 
 Curso cursoDeIngles = new Curso();

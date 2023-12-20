@@ -3,10 +3,10 @@ namespace ConsoleApp2.Models;
 public class Pessoa
 {
     public Pessoa(){}//construtor vazio é necessário para que o construtor com parâmetros funcione 
-    public Pessoa(string Name, string LastName)
+    public Pessoa(string name, string lastname)
     {
-        this.Name = Name;
-        this.LastName = LastName;
+        Name = name;
+        LastName = lastname;
     }
     
     private string _name;
