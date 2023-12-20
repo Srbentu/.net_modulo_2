@@ -32,8 +32,29 @@ finally
     //Console.WriteLine($"Chegou até aqui!");
 }
 
-new ExemploExcecao().method1();
+//new ExemploExcecao().method1();
 
+
+
+
+Queue<int> fila = new Queue<int>();
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+fila.Enqueue(10);
+
+foreach (var item in fila)
+{
+    Console.WriteLine(item);
+}
+
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove o primeiro elemento da fila
+
+foreach (var item in fila)
+{
+    Console.WriteLine(item);
+}
 
 //Pessoa p1 = new Pessoa();
 //p1.Name = "Breno";
