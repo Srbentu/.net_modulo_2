@@ -3,13 +3,13 @@ namespace ConsoleApp2.Models;
 public class Pessoa
 {
     private string _name;
+    private int _age;
 
+    public string LastName { get; set; }
     public string Name
     {
-        get
-        {
-            return _name.ToUpper();
-        }
+        get => _name.ToUpper();
+        
 
         set
         {
@@ -21,10 +21,25 @@ public class Pessoa
             _name = value;
         }
     }
-    public int Age { get; set; }
+
+    public string FullName =>$"{Name} {LastName}".ToUpper(); 
+    public int Age
+    {
+        get => _age;
+
+        set
+        {
+            if (value < 0)
+            {
+                throw new AggregateException("Idade não pode ser menor que 0");
+            }
+ 
+            _age = value;
+        }
+    }
     
     public void Apresentar()
     {
-        Console.WriteLine($"Olá, meu nome é {Name} e tenho {Age} anos.");
+        Console.WriteLine($"Olá, meu nome é {FullName} e tenho {Age} anos.");
     }
 }
