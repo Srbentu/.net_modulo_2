@@ -19,19 +19,20 @@ try
     string[] linhas = File.ReadAllLines("../../../Arquivos/texto.txt");
     foreach (var linha in linhas)
     {
-        Console.WriteLine(linha);
+        //Console.WriteLine(linha);
     }
 }
 catch (Exception e)
 {
-    Console.WriteLine($"Ocorreu uma execeção ao ler o arquivo {e.Message}");
+    //Console.WriteLine($"Ocorreu uma execeção ao ler o arquivo {e.Message}");
 
 }
 finally
 {
-    Console.WriteLine($"Chegou até aqui!");
+    //Console.WriteLine($"Chegou até aqui!");
 }
 
+new ExemploExcecao().method1();
 
 
 //Pessoa p1 = new Pessoa();
