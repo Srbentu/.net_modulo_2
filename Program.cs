@@ -14,11 +14,24 @@ cursoDeIngles.AdicionarAluno(p2);
 decimal valorMonetário = 82.40m;
 //Console.WriteLine(valorMonetário.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR")));
 
-string[] linhas = File.ReadAllLines("../../../Arquivos/texto.txt");
-foreach (var linha in linhas)
+try
 {
-    Console.WriteLine(linha);
+    string[] linhas = File.ReadAllLines("../../../Arquivos/texto.txt");
+    foreach (var linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Ocorreu uma execeção ao ler o arquivo {e.Message}");
+
+}
+finally
+{
+    Console.WriteLine($"Chegou até aqui!");
+}
+
 
 
 //Pessoa p1 = new Pessoa();
