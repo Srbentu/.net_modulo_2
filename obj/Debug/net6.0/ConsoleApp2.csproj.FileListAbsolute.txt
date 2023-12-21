@@ -13,3 +13,5 @@
 /Users/brenomarcomini/RiderProjects/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.pdb
 /Users/brenomarcomini/RiderProjects/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.genruntimeconfig.cache
 /Users/brenomarcomini/RiderProjects/ConsoleApp2/obj/Debug/net6.0/ref/ConsoleApp2.dll
+/Users/brenomarcomini/RiderProjects/ConsoleApp2/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/brenomarcomini/RiderProjects/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.csproj.CopyComplete

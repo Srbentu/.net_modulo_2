@@ -1,5 +1,45 @@
 ﻿using System.Globalization;
 using ConsoleApp2.Models;
+using Newtonsoft.Json;
+
+
+Venda v1 = new Venda(1, "Material de Escritório", 25.00M);
+
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p4 = new Pessoa("Breno", "Marcomini");
+// (string name, string lastname) = p4;
+//
+//
+// Console.WriteLine($"{name}, {lastname}");
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //
@@ -16,20 +56,20 @@ using ConsoleApp2.Models;
 //
 //
 //
-LeituraArquivo arquivo = new LeituraArquivo();
-var (Sucess, Lines, _) = arquivo.lerArquivo("../../../Arquivos/texto.txt");
-if(Sucess)
-{
-    //Console.WriteLine($"linhas lidas: {ManyLines}");
-    foreach (var line in Lines)
-    {
-        Console.WriteLine(line);
-    }
-}
-else
-{
-    Console.WriteLine("Ocorreu um erro ao ler o arquivo");
-}
+// LeituraArquivo arquivo = new LeituraArquivo();
+// var (Sucess, Lines, _) = arquivo.lerArquivo("../../../Arquivos/texto.txt");
+// if(Sucess)
+// {
+//     //Console.WriteLine($"linhas lidas: {ManyLines}");
+//     foreach (var line in Lines)
+//     {
+//         Console.WriteLine(line);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Ocorreu um erro ao ler o arquivo");
+// }
 //
 // Pessoa p1 = new Pessoa(name:"Breno", lastname:"Marcomini");
 // Pessoa p2 = new Pessoa("Julia" , "Marchetti");

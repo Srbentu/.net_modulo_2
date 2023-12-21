@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TSArLzJVdkZWyhGgMTf3Pe6nvxnhPIGThYmw8d2MCcS1oL6IefZEcxVWYmjRdP/mjQdyGRs1rJM8YTDccU64Pg==",
+  "dgSpecHash": "JUdk/E3rc4KZXgbaTwOQG0KubzCuoESokikkL/tKIndmCbsenocFpUEsA58diMGP2Q1yaNXLAy1dBmcKTTXDhw==",
   "success": true,
   "projectFilePath": "/Users/brenomarcomini/RiderProjects/ConsoleApp2/ConsoleApp2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/brenomarcomini/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
