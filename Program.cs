@@ -3,23 +3,15 @@ using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
 
+string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
 
+List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+foreach (var venda in listaVendas)
+{
+    Console.WriteLine(
+        $"Id: {venda.Id} Produto: {venda.Produto} Preço: {venda.Preco.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR"))} Data da Venda: {venda.DataVenda}");
+}
 
 
 //
