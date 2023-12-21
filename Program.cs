@@ -2,17 +2,14 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
-MeuArray<int> arrayinteiro = new MeuArray<int>();
-arrayinteiro.adicionarElementoArray(21);
-Console.WriteLine(arrayinteiro[0]);
+int num = 212;
 
+bool par = false;
 
-MeuArray<string> arraystring = new MeuArray<string>();
-arraystring.adicionarElementoArray("Breno");
-Console.WriteLine(arraystring[0]);
+par = num.IsEven();
 
-
-
+string mensagem = $"o número {num} é {(par ? "par" : "impar")}";
+Console.WriteLine(mensagem);
 
 
 
@@ -21,6 +18,23 @@ Console.WriteLine(arraystring[0]);
 
 
 
+
+
+
+
+
+
+
+
+
+// MeuArray<int> arrayinteiro = new MeuArray<int>();
+// arrayinteiro.adicionarElementoArray(21);
+// Console.WriteLine(arrayinteiro[0]);
+//
+//
+// MeuArray<string> arraystring = new MeuArray<string>();
+// arraystring.adicionarElementoArray("Breno");
+// Console.WriteLine(arraystring[0]);
 
 
 //dynamic variavelDinamica = "Breno";
