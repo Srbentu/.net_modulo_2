@@ -2,10 +2,14 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
+MeuArray<int> arrayinteiro = new MeuArray<int>();
+arrayinteiro.adicionarElementoArray(21);
+Console.WriteLine(arrayinteiro[0]);
 
 
-
-
+MeuArray<string> arraystring = new MeuArray<string>();
+arraystring.adicionarElementoArray("Breno");
+Console.WriteLine(arraystring[0]);
 
 
 
