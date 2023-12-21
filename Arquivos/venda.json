@@ -1,5 +1,37 @@
-{
-  "Id": 1,
-  "Produto": "Material de Escritório",
-  "Preco": 25.00
-}
+[
+  {
+    "Id": 1,
+    "Produto": "Material de Escritório",
+    "Preco": 25.00
+  },
+  {
+    "Id": 2,
+    "Produto": "Material de Limpeza",
+    "Preco": 125.00
+  },
+  {
+    "Id": 3,
+    "Produto": "Software",
+    "Preco": 325.00
+  },
+  {
+    "Id": 4,
+    "Produto": "Steam",
+    "Preco": 425.00
+  },
+  {
+    "Id": 5,
+    "Produto": "Contas",
+    "Preco": 255.00
+  },
+  {
+    "Id": 6,
+    "Produto": "Imposto",
+    "Preco": 265.00
+  },
+  {
+    "Id": 7,
+    "Produto": "Pizza",
+    "Preco": 205.00
+  }
+]

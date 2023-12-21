@@ -2,10 +2,25 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
+List<Venda> listaVendas = new List<Venda>();
 
 Venda v1 = new Venda(1, "Material de Escritório", 25.00M);
+Venda v2 = new Venda(2, "Material de Limpeza", 125.00M);
+Venda v3 = new Venda(3, "Software", 325.00M);
+Venda v4 = new Venda(4, "Steam", 425.00M);
+Venda v5 = new Venda(5, "Contas", 255.00M);
+Venda v6 = new Venda(6, "Imposto", 265.00M);
+Venda v7 = new Venda(7, "Pizza", 205.00M);
 
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+listaVendas.Add(v3);
+listaVendas.Add(v4);
+listaVendas.Add(v5);
+listaVendas.Add(v6);
+listaVendas.Add(v7);
+
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 File.WriteAllText("../../../Arquivos/venda.json", serializado);
 
 
