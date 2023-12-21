@@ -2,6 +2,20 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
+var tipoAnonimo = new {Nome = "Breno", Sobrenome = "Marcomini", Altura = 2};
+Console.WriteLine(tipoAnonimo.Altura);
+
+
+
+
+
+
+
+
+
+
+
+
 // bool? desejaReceberEmail = false;
 //  
 // if(desejaReceberEmail.HasValue && desejaReceberEmail.Value)
@@ -17,16 +31,16 @@ using Newtonsoft.Json;
 //     Console.WriteLine("Não escolhi ainda");
 // }
 
-string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
-
-List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
-
-foreach (var venda in listaVendas)
-{
-    Console.WriteLine(
-        $"Id: {venda.Id} Produto: {venda.Produto}" +
-        $" Preço: {venda.Preco.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR"))} Data da Venda: {venda.DataVenda}" + $"{(venda.Desconto.HasValue ? $" Desconto de: {venda.Desconto}" : "")}");
-}
+// string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
+//
+// List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
+//
+// foreach (var venda in listaVendas)
+// {
+//     Console.WriteLine(
+//         $"Id: {venda.Id} Produto: {venda.Produto}" +
+//         $" Preço: {venda.Preco.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR"))} Data da Venda: {venda.DataVenda}" + $"{(venda.Desconto.HasValue ? $" Desconto de: {venda.Desconto}" : "")}");
+// }
 
 
 //
