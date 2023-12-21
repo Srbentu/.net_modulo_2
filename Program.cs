@@ -2,17 +2,28 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
+dynamic variavelDinamica = "Breno";
 
-string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
 
-List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
 
-var listaAnonimo = listaVendas.Select(x => new {x.Produto, x.Preco});
 
-foreach (var venda in listaAnonimo)
-{
-    Console.WriteLine($"{venda.Produto} + {venda.Preco}");
-}
+
+
+
+
+
+
+//
+// string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
+//
+// List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
+//
+// var listaAnonimo = listaVendas.Select(x => new {x.Produto, x.Preco});
+//
+// foreach (var venda in listaAnonimo)
+// {
+//     Console.WriteLine($"{venda.Produto} + {venda.Preco}");
+// }
 
 
 
