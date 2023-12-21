@@ -17,10 +17,10 @@ using ConsoleApp2.Models;
 //
 //
 LeituraArquivo arquivo = new LeituraArquivo();
-var (Sucess, Lines, ManyLines) = arquivo.lerArquivo("../../../Arquivos/texto.txt");
+var (Sucess, Lines, _) = arquivo.lerArquivo("../../../Arquivos/texto.txt");
 if(Sucess)
 {
-    Console.WriteLine($"linhas lidas: {ManyLines}");
+    //Console.WriteLine($"linhas lidas: {ManyLines}");
     foreach (var line in Lines)
     {
         Console.WriteLine(line);
