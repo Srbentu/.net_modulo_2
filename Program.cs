@@ -2,32 +2,31 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
-bool? desejaReceberEmail = false;
- 
-if(desejaReceberEmail.HasValue && desejaReceberEmail.Value)
-{
-    Console.WriteLine("Sim, desejo receber e-mails");
-}
-else if(desejaReceberEmail.HasValue && !desejaReceberEmail.Value)
-{
-    Console.WriteLine("Não, não desejo receber e-mails");
-}
-else
-{
-    Console.WriteLine("Não escolhi ainda");
-}
-
-
-
-// string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
-//
-// List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
-//
-// foreach (var venda in listaVendas)
+// bool? desejaReceberEmail = false;
+//  
+// if(desejaReceberEmail.HasValue && desejaReceberEmail.Value)
 // {
-//     Console.WriteLine(
-//         $"Id: {venda.Id} Produto: {venda.Produto} Preço: {venda.Preco.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR"))} Data da Venda: {venda.DataVenda}");
+//     Console.WriteLine("Sim, desejo receber e-mails");
 // }
+// else if(desejaReceberEmail.HasValue && !desejaReceberEmail.Value)
+// {
+//     Console.WriteLine("Não, não desejo receber e-mails");
+// }
+// else
+// {
+//     Console.WriteLine("Não escolhi ainda");
+// }
+
+string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
+
+List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
+
+foreach (var venda in listaVendas)
+{
+    Console.WriteLine(
+        $"Id: {venda.Id} Produto: {venda.Produto}" +
+        $" Preço: {venda.Preco.ToString("C", CultureInfo.CreateSpecificCulture("PT-BR"))} Data da Venda: {venda.DataVenda}" + $"{(venda.Desconto.HasValue ? $" Desconto de: {venda.Desconto}" : "")}");
+}
 
 
 //
