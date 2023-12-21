@@ -2,22 +2,34 @@
 using ConsoleApp2.Models;
 
 
-
-(int id, string Name, string LastName) tupla = (1, "Breno", "Marcomini");
-ValueTuple<int, string, string> tupla2 = (1, "Breno", "Marcomini");
-var tupla3 = Tuple.Create(1, "Breno", "Marcomini");
-
-Console.WriteLine(tupla.Name);
-Console.WriteLine(tupla2.Item1);
-Console.WriteLine(tupla3.Item1);
-
-
-
-
-
-
-
-
+//
+// (int id, string Name, string LastName) tupla = (1, "Breno", "Marcomini");
+// ValueTuple<int, string, string> tupla2 = (1, "Breno", "Marcomini");
+// var tupla3 = Tuple.Create(1, "Breno", "Marcomini");
+//
+// Console.WriteLine(tupla.Name);
+// Console.WriteLine(tupla2.Item1);
+// Console.WriteLine(tupla3.Item1);
+//
+//
+//
+//
+//
+//
+LeituraArquivo arquivo = new LeituraArquivo();
+var (Sucess, Lines, ManyLines) = arquivo.lerArquivo("../../../Arquivos/texto.txt");
+if(Sucess)
+{
+    Console.WriteLine($"linhas lidas: {ManyLines}");
+    foreach (var line in Lines)
+    {
+        Console.WriteLine(line);
+    }
+}
+else
+{
+    Console.WriteLine("Ocorreu um erro ao ler o arquivo");
+}
 //
 // Pessoa p1 = new Pessoa(name:"Breno", lastname:"Marcomini");
 // Pessoa p2 = new Pessoa("Julia" , "Marchetti");
