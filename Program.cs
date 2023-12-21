@@ -2,7 +2,24 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
-dynamic variavelDinamica = "Breno";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//dynamic variavelDinamica = "Breno";
 
 
 
