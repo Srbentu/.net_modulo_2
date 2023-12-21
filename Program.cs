@@ -2,19 +2,24 @@
 using ConsoleApp2.Models;
 using Newtonsoft.Json;
 
-var tipoAnonimo = new {Nome = "Breno", Sobrenome = "Marcomini", Altura = 2};
-Console.WriteLine(tipoAnonimo.Altura);
+
+string conteudo = File.ReadAllText("../../../Arquivos/venda.json");
+
+List<VendaRevert> listaVendas = JsonConvert.DeserializeObject<List<VendaRevert>>(conteudo);
+
+var listaAnonimo = listaVendas.Select(x => new {x.Produto, x.Preco});
+
+foreach (var venda in listaAnonimo)
+{
+    Console.WriteLine($"{venda.Produto} + {venda.Preco}");
+}
 
 
 
 
 
-
-
-
-
-
-
+// var tipoAnonimo = new {Nome = "Breno", Sobrenome = "Marcomini", Altura = 2};
+// Console.WriteLine(tipoAnonimo.Altura);
 
 // bool? desejaReceberEmail = false;
 //  
